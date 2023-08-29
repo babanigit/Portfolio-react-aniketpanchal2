@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "./Profile.png";
+import HeroImage from "./Me2.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
@@ -37,7 +37,7 @@ const Home = () => {
 
         <div>
           <img
-            // src={HeroImage}
+            src={HeroImage}
             alt="my profile"
             className="rounded-2xl w-50% mx-auto md:w-full"
           />
