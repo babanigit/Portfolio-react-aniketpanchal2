@@ -2,35 +2,17 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
+// importing from data
+import { links } from "../data";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  const links = [
-    {
-      id: 1,
-      linkName: 'home',
-    },
-    {
-      id: 2,
-      linkName: 'about',
-    },
-    {
-      id: 3,
-      linkName: 'portfolio',
-    },
-    {
-      id: 4,
-      linkName: 'experience',
-    },
-    {
-      id: 5,
-      linkName: 'contact',
-    },
-  ];
+ 
 
   return (
     <>
-        <div className="flex justify-between items-center w-full h-20 p-10  text-white fixed">
+        <div className="flex justify-between items-center w-full h-20 p-10  text-white fixed ">
           <div>
             <h1 className="text-5xl font-signature ml-2">aniket</h1>
           </div>
@@ -39,7 +21,7 @@ const Navbar = () => {
             {links.map(({ id, linkName }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+                className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
               >
                 <Link to={linkName} smooth duration={500}>
                   {linkName}

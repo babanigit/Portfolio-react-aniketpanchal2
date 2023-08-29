@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
-  const links = [
+  const links2 = [
     {
       id: 1,
       child: (
@@ -49,7 +49,7 @@ const SocialLinks = () => {
   return (
     <div className="fixed top-[35%] left-0 hidden flex-col lg:flex">
       <ul>
-        {links.map(({ id, child, href, style, download }) => (
+        {links2.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
@@ -58,7 +58,7 @@ const SocialLinks = () => {
               style
             }
           >
-            <a
+            <as
               href={href}
               className="flex w-full items-center justify-between text-white"
               download={download}
@@ -66,7 +66,7 @@ const SocialLinks = () => {
               rel="noreferrer"
             >
               {child}
-            </a>
+            </as>
           </li>
         ))}
       </ul>
