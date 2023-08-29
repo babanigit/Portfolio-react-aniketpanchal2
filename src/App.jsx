@@ -14,13 +14,18 @@ import ZtrailGrid from './components/Ztrail/ZtrailGrid';
 function App() {
   return (
     <>
+    <div>
 
-    
     <Navbar/>
     <Home/>
     <SocialLinks/>
     <Portfolio/>
     <Experience/>
+
+    </div>
+
+    
+
 
 {/* trial */}
     {/* <Ztrail/>
